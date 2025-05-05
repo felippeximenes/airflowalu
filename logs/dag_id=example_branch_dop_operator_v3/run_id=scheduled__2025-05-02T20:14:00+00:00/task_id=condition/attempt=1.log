@@ -1,0 +1,27 @@
+[2025-05-02 17:15:02,541] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_branch_dop_operator_v3.condition scheduled__2025-05-02T20:14:00+00:00 [queued]>
+[2025-05-02 17:15:02,547] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_branch_dop_operator_v3.condition scheduled__2025-05-02T20:14:00+00:00 [queued]>
+[2025-05-02 17:15:02,547] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-02 17:15:02,547] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-05-02 17:15:02,547] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-02 17:15:02,559] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): condition> on 2025-05-02 20:14:00+00:00
+[2025-05-02 17:15:02,560] {standard_task_runner.py:52} INFO - Started process 9411 to run task
+[2025-05-02 17:15:02,563] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'example_branch_dop_operator_v3', 'condition', 'scheduled__2025-05-02T20:14:00+00:00', '--job-id', '26', '--raw', '--subdir', '/root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py', '--cfg-path', '/tmp/tmphvzr_6h8', '--error-file', '/tmp/tmpozzon2h8']
+[2025-05-02 17:15:02,563] {standard_task_runner.py:80} INFO - Job 26: Subtask condition
+[2025-05-02 17:15:02,597] {task_command.py:370} INFO - Running <TaskInstance: example_branch_dop_operator_v3.condition scheduled__2025-05-02T20:14:00+00:00 [running]> on host Felippe.
+[2025-05-02 17:15:02,632] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=example_branch_dop_operator_v3
+AIRFLOW_CTX_TASK_ID=condition
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-02T20:14:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-05-02T20:14:00+00:00
+[2025-05-02 17:15:02,637] {logging_mixin.py:115} WARNING - /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/utils/context.py:290 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2025-05-02 17:15:02,637] {logging_mixin.py:115} INFO - ------------- exec dttm = 2025-05-02T20:14:00+00:00 and minute = 14
+[2025-05-02 17:15:02,637] {python.py:173} INFO - Done. Returned value was: empty_task_1
+[2025-05-02 17:15:02,637] {skipmixin.py:140} INFO - Following branch empty_task_1
+[2025-05-02 17:15:02,637] {skipmixin.py:175} INFO - Skipping tasks ['empty_task_2']
+[2025-05-02 17:15:02,666] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=example_branch_dop_operator_v3, task_id=condition, execution_date=20250502T201400, start_date=20250502T201502, end_date=20250502T201502
+[2025-05-02 17:15:02,698] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-05-02 17:15:02,717] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2025-05-02 17:22:31,904] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: atividade_aula_4.cumprimentos scheduled__2025-05-01T00:00:00+00:00 [queued]>
+[2025-05-02 17:22:31,909] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: atividade_aula_4.cumprimentos scheduled__2025-05-01T00:00:00+00:00 [queued]>
+[2025-05-02 17:22:31,910] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-02 17:22:31,910] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-05-02 17:22:31,910] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-02 17:22:31,920] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): cumprimentos> on 2025-05-01 00:00:00+00:00
+[2025-05-02 17:22:31,922] {standard_task_runner.py:52} INFO - Started process 11351 to run task
+[2025-05-02 17:22:31,924] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'atividade_aula_4', 'cumprimentos', 'scheduled__2025-05-01T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/atividade_aula_4.py', '--cfg-path', '/tmp/tmp0gcotelq', '--error-file', '/tmp/tmpnyvmugs0']
+[2025-05-02 17:22:31,924] {standard_task_runner.py:80} INFO - Job 33: Subtask cumprimentos
+[2025-05-02 17:22:31,949] {task_command.py:370} INFO - Running <TaskInstance: atividade_aula_4.cumprimentos scheduled__2025-05-01T00:00:00+00:00 [running]> on host Felippe.
+[2025-05-02 17:22:31,980] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=atividade_aula_4
+AIRFLOW_CTX_TASK_ID=cumprimentos
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-05-01T00:00:00+00:00
+[2025-05-02 17:22:31,980] {logging_mixin.py:115} INFO - Boas-vindas ao Airflow!
+[2025-05-02 17:22:31,980] {python.py:173} INFO - Done. Returned value was: None
+[2025-05-02 17:22:31,984] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=atividade_aula_4, task_id=cumprimentos, execution_date=20250501T000000, start_date=20250502T202231, end_date=20250502T202231
+[2025-05-02 17:22:32,020] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-05-02 17:22:32,030] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
