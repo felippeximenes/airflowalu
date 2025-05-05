@@ -859,3 +859,10 @@
 [2025-05-05 14:51:58,963] {logging_mixin.py:115} INFO - [2025-05-05 14:51:58,963] {dag.py:2379} INFO - Sync 1 DAGs
 [2025-05-05 14:51:58,973] {logging_mixin.py:115} INFO - [2025-05-05 14:51:58,973] {dag.py:2927} INFO - Setting next_dagrun for example_task_group to 2025-05-04T17:51:58.973205+00:00, run_after=2025-05-05T17:51:58.973205+00:00
 [2025-05-05 14:51:58,985] {processor.py:161} INFO - Processing /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.038 seconds
+[2025-05-05 14:52:34,820] {processor.py:153} INFO - Started process (PID=15923) to work on /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-05-05 14:52:34,821] {processor.py:641} INFO - Processing file /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-05-05 14:52:34,821] {logging_mixin.py:115} INFO - [2025-05-05 14:52:34,821] {dagbag.py:507} INFO - Filling up the DagBag from /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-05-05 14:52:34,827] {processor.py:651} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py
+[2025-05-05 14:52:34,840] {logging_mixin.py:115} INFO - [2025-05-05 14:52:34,840] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-05-05 14:52:34,851] {logging_mixin.py:115} INFO - [2025-05-05 14:52:34,851] {dag.py:2927} INFO - Setting next_dagrun for example_task_group to 2025-05-04T17:52:34.851422+00:00, run_after=2025-05-05T17:52:34.851422+00:00
+[2025-05-05 14:52:34,870] {processor.py:161} INFO - Processing /root/Documents/airflowalu/venv/lib/python3.9/site-packages/airflow/example_dags/example_task_group.py took 0.052 seconds

@@ -13,7 +13,7 @@ with DAG(
         schedule_interval='0 0 * * 1', # executar toda segunda feira # executar toda segunda feira # O primeiro 0 é a hora e o segundo 0 é o minuto # O * para rodar o mes todo
 ) as dag:
 
-    tarefa_1 = BashOperator(
+    tarefa_1 = BashOperator( # Esse parâmetro existe em todos os operadores do Airflow. Ele é utilizado para definir o nome da tarefa que estamos instanciando.
             task_id = 'cria_pasta',
             bash_command = 'mkdir -p "/home/Felippe/Documents/airflowalu/semana={{data_interval_end.strftime("%Y-%m-%d")}}"'
             )
@@ -42,7 +42,7 @@ with DAG(
     tarefa_2 = PythonOperator(
             task_id = 'extrai_dados',
             python_callable = extrai_dados, # Passa o nome da função ou codigo python que deseja executar
-            op_kwargs= {'data_interval_end' : '{{data_interval_end.strftime("%Y-%m-%d")}}'} # Dicionaerio de argumentos que deseja passar para a função pythoncallable
+            op_kwargs= {'data_interval_end' : '{{data_interval_end.strftime("%Y-%m-%d")}}'} # Dicionaerio de argumentos que deseja passar para a função pythoncallable #Isso mesmo! Esse parâmetro é utilizado para definir os argumentos que estamos utilizando na função que o PythonOperator vai executar. Nós passamos essa informação no formato de um dicionário de argumentos de palavras-chave que serão descompactados na função.
         )
 
     tarefa_1 >> tarefa_2
